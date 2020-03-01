@@ -1,0 +1,8 @@
+#/usr/bin/env bash
+
+path=$(realpath "$1")
+
+docker run -i --rm \
+  --name=epub_validate \
+  -v "$path":/opt/app/file.epub \
+  epub_validate:latest
