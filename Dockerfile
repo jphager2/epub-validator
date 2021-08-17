@@ -2,7 +2,7 @@ FROM alpine:3.11
 
 RUN mkdir -p /opt/app && touch /opt/app/file.epub
 
-ADD epubcheck-4.2.2 /opt/epubcheck
+ADD epubcheck-4.2.4 /opt/epubcheck
 
 RUN apk add --no-cache openjdk11-jre
 
